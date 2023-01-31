@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		21BA5BC729898CD50022F814 /* Alert++.swift in Sources */ = {isa = PBXBuildFile; fileRef = 21BA5BC629898CD50022F814 /* Alert++.swift */; };
 		6DA2061E29883A4F001B137D /* VanishBarApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6DA2061D29883A4F001B137D /* VanishBarApp.swift */; };
 		6DA2062229883A51001B137D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DA2062129883A51001B137D /* Assets.xcassets */; };
 		6DA2062529883A51001B137D /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 6DA2062429883A51001B137D /* Preview Assets.xcassets */; };
@@ -21,6 +22,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		21BA5BC629898CD50022F814 /* Alert++.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Alert++.swift"; sourceTree = "<group>"; };
+		21BA5BC92989917A0022F814 /* ResSet16.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ResSet16.entitlements; sourceTree = "<group>"; };
 		6DA2061A29883A4F001B137D /* VanishBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = VanishBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6DA2061D29883A4F001B137D /* VanishBarApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VanishBarApp.swift; sourceTree = "<group>"; };
 		6DA2062129883A51001B137D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -50,11 +53,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		21BA5BC829898D830022F814 /* OverwriteFiles */ = {
+			isa = PBXGroup;
+			children = (
+				6DA2064029897694001B137D /* statusBarOverrides15 */,
+				6DA2063C29896855001B137D /* statusBarOverrides16 */,
+			);
+			path = OverwriteFiles;
+			sourceTree = "<group>";
+		};
 		6DA2061129883A4F001B137D = {
 			isa = PBXGroup;
 			children = (
-				6DA2061C29883A4F001B137D /* VanishBar */,
+				21BA5BC92989917A0022F814 /* ResSet16.entitlements */,
 				6DA2061B29883A4F001B137D /* Products */,
+				6DA2061C29883A4F001B137D /* VanishBar */,
 			);
 			sourceTree = "<group>";
 		};
@@ -69,16 +82,15 @@
 		6DA2061C29883A4F001B137D /* VanishBar */ = {
 			isa = PBXGroup;
 			children = (
-				6DA2064229897AA1001B137D /* Extensions */,
-				6DA2064029897694001B137D /* statusBarOverrides15 */,
-				6DA2063C29896855001B137D /* statusBarOverrides16 */,
-				6DA2063929883CAA001B137D /* Hider */,
-				6DA2062B29883A6B001B137D /* Exploit */,
-				6DA2061D29883A4F001B137D /* VanishBarApp.swift */,
-				6DA2062129883A51001B137D /* Assets.xcassets */,
-				6DA2062329883A51001B137D /* Preview Content */,
-				6DA2063529883ACF001B137D /* VanishBarHeader.h */,
 				6DA2063729883BC7001B137D /* ApplyView.swift */,
+				6DA2062129883A51001B137D /* Assets.xcassets */,
+				6DA2062B29883A6B001B137D /* Exploit */,
+				6DA2064229897AA1001B137D /* Extensions */,
+				6DA2063929883CAA001B137D /* Hider */,
+				21BA5BC829898D830022F814 /* OverwriteFiles */,
+				6DA2062329883A51001B137D /* Preview Content */,
+				6DA2061D29883A4F001B137D /* VanishBarApp.swift */,
+				6DA2063529883ACF001B137D /* VanishBarHeader.h */,
 			);
 			path = VanishBar;
 			sourceTree = "<group>";
@@ -94,12 +106,12 @@
 		6DA2062B29883A6B001B137D /* Exploit */ = {
 			isa = PBXGroup;
 			children = (
-				6DA2062C29883A6C001B137D /* vm_unaligned_copy_switch_race.c */,
-				6DA2062D29883A6C001B137D /* grant_full_disk_access.m */,
-				6DA2062E29883A6C001B137D /* helpers.m */,
-				6DA2062F29883A6C001B137D /* vm_unaligned_copy_switch_race.h */,
-				6DA2063029883A6C001B137D /* helpers.h */,
 				6DA2063129883A6C001B137D /* grant_full_disk_access.h */,
+				6DA2062D29883A6C001B137D /* grant_full_disk_access.m */,
+				6DA2063029883A6C001B137D /* helpers.h */,
+				6DA2062E29883A6C001B137D /* helpers.m */,
+				6DA2062C29883A6C001B137D /* vm_unaligned_copy_switch_race.c */,
+				6DA2062F29883A6C001B137D /* vm_unaligned_copy_switch_race.h */,
 			);
 			path = Exploit;
 			sourceTree = "<group>";
@@ -116,6 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				6DA2064329897AB3001B137D /* ButtonStyles.swift */,
+				21BA5BC629898CD50022F814 /* Alert++.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -198,6 +211,7 @@
 				6DA2061E29883A4F001B137D /* VanishBarApp.swift in Sources */,
 				6DA2064429897AB3001B137D /* ButtonStyles.swift in Sources */,
 				6DA2063229883A6C001B137D /* vm_unaligned_copy_switch_race.c in Sources */,
+				21BA5BC729898CD50022F814 /* Alert++.swift in Sources */,
 				6DA2063429883A6C001B137D /* helpers.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -327,7 +341,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"VanishBar/Preview Content\"";
-				DEVELOPMENT_TEAM = HD373A4P3H;
+				DEVELOPMENT_TEAM = 92S6JX27W2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
@@ -337,12 +351,12 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = org.haxi0.VanishBar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
@@ -363,7 +377,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"VanishBar/Preview Content\"";
-				DEVELOPMENT_TEAM = HD373A4P3H;
+				DEVELOPMENT_TEAM = 92S6JX27W2;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
@@ -373,12 +387,12 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.5;
+				IPHONEOS_DEPLOYMENT_TARGET = 15.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				MARKETING_VERSION = 1.0;
+				MARKETING_VERSION = 1.1;
 				PRODUCT_BUNDLE_IDENTIFIER = org.haxi0.VanishBar;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";

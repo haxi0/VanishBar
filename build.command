@@ -32,6 +32,11 @@ if [ -e "$TARGET_APP/embedded.mobileprovision" ]; then
     rm -rf "$TARGET_APP/embedded.mobileprovision"
 fi
 
+
+# Add entitlements
+echo "Adding entitlements"
+ldid -S"$WORKING_LOCATION/VanishBar.entitlements" "$TARGET_APP/$APPLICATION_NAME"
+
 mkdir Payload
 cp -r VanishBar.app Payload/VanishBar.app
 zip -vr VanishBar.ipa Payload
